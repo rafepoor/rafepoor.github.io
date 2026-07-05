@@ -1,0 +1,101 @@
+/* ── Paleta de colores Raul Fernando Polanco Ortiz — Azul oscuro / Ciberseguridad ── */
+:root {
+  /* Navy scale (primario) */
+  --color-navy-deep: #0a1930;      /* Azul marino casi negro */
+  --color-navy-mid: #12294d;       /* Azul marino medio */
+  --color-navy-soft: #1e3a63;      /* Azul marino suave */
+
+  /* Blue scale (acento principal) */
+  --color-blue-primary: #2f6fb0;   /* Azul acero, enlaces y títulos */
+  --color-blue-light: #6fa8dc;     /* Azul claro */
+  --color-blue-pale: #e8f1fb;      /* Azul muy claro (fondos sutiles) */
+  --color-blue-border: #cddef0;    /* Bordes azules */
+
+  /* Accent (armonía cálida, uso puntual) */
+  --color-accent: #b8892f;         /* Dorado apagado para CTAs y detalles */
+  --color-accent-light: #f3e6cc;
+
+  /* Backgrounds */
+  --color-bg: #f3f6fb;             /* Fondo general con tinte azul */
+  --color-surface: #FFFFFF;
+
+  /* Text */
+  --color-text: #0f1f33;
+  --color-text-muted: #5b6b82;
+
+  /* Fonts */
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-blue-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-navy-mid);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.85em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-blue-pale);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-light);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue-primary);
+}
