@@ -89,7 +89,7 @@ export default function PerfilPage() {
               </span>
             </div>
             <a
-              href={`${import.meta.env.BASE_URL}CV_raul_Polanco.pdf`}
+              href={`${import.meta.env.BASE_URL}CV_Raul_Polanco_Profesional.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.downloadBtn}
